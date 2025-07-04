@@ -1,2 +1,2 @@
 # wdd231
-Programming with Class WDD231
+FRONTEND WEB DEV WDD231
