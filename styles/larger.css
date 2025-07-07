@@ -1,0 +1,42 @@
+@media (min-width: 38rem) {
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .course-filter {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+
+    }
+}

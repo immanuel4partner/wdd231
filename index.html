@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRONTEND WEB DEVELOPMENT WDD 231</title>
+    <meta name="description" content="About Me page for WDD231">
+    <meta name="author" content="NJIBIE Immanuel">
+    <title>About Me - WDD231</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/it-alt.svg" alt="Home Icon" width="512" height="512">
+        <span>NJIBIE Immanuel</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+    </header>
+    <nav id="nav-bar" class="navigation" aria-label="Main site navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="https://immanuel4partner.github.io/wdd131/place.html">Chamber Project</a></li>
+            <li><a href="https://immanuel4partner.github.io/wdd131/project/">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                <b>Introduction:</b>
+
+                My names are NJIBIE Immanuel, I am an IT enthusiast and software development student with a strong
+                passion for technology and innovation. Driven by
+                curiosity and a desire to solve real-world problems, I am constantly exploring new programming
+                languages, tools, and
+                development frameworks. My focus is on building practical, user-friendly applications while continuously
+                improving my
+                skills in areas such as web development, software engineering, and system design. Eager to contribute to
+                the tech
+                community, I aim to grow into a versatile developer who creates impactful digital solutions.
+            </p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <div class="photo-section">
+                <img src="images/profile.webp" alt="NJIBIE Immanuel" width="300" height="300">
+            </div>
+
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filter">
+                <button id="all-courses-btn" class="filter-btn" type="button">All Courses</button>
+                <button id="wdd-courses-btn" class="filter-btn" type="button">WDD Courses</button>
+                <button id="cse-courses-btn" class="filter-btn" type="button">CSE Courses</button>
+            </div>
+            <div id="courses-container" class="courses-grid">
+                <!-- Course cards will be dynamically inserted here by JS -->
+            </div>
+            <div class="credits-summary">
+                Total Credits: <span id="total-credits">0</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/immanuelnjibie//" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+            <a href="https://github.com/immanuel4partner/wdd231" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+            <a href="https://web.facebook.com/immanuel.njibie/" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+            </a>
+        </div>
+        <p id="year">
+            &copy; <span id="currentyear"></span> NJIBIE Immanuel, Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
