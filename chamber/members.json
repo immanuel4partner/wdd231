@@ -8,7 +8,7 @@
         "image": "lcci.webp"
     },
     {
-        "name": "Wam West African Mechatronics",
+        "name": "WAM West African Mechatronics",
         "address": "45B Admiralty Way, Lekki Phase 1, Lagos",
         "phone": "+234 812 345 6789",
         "website": "https://www.westafricatech.com/",
@@ -21,6 +21,54 @@
         "phone": "+234 701 987 6543",
         "website": "https://naijacreative.com",
         "membership": "bronze",
-        "image": "naijacreative-logo.jpg"
+        "image": "naijacreative.webp"
+    },
+    {
+        "name": "MetroFin Capital",
+        "address": "10 Adeola Odeku Street, Victoria Island, Lagos",
+        "phone": "+234 809 556 7812",
+        "website": "https://metrofin.com.ng",
+        "membership": "silver",
+        "image": "metrofin.webp"
+    },
+    {
+        "name": "BrightPath Educational Services",
+        "address": "3rd Floor, Nigerian Education House, Yaba, Lagos",
+        "phone": "+234 703 229 8401",
+        "website": "https://brightpath.edu.ng",
+        "membership": "bronze",
+        "image": "brightpath.webp"
+    },
+    {
+        "name": "TropicMart Retail",
+        "address": "9 Obafemi Awolowo Road, Ikeja, Lagos",
+        "phone": "+234 811 234 6780",
+        "website": "https://tropicmart.com",
+        "membership": "gold",
+        "image": "tropicmart.webp"
+    },
+    {
+        "name": "EcoRide Transport Solutions",
+        "address": "14A Herbert Macaulay Way, Ebute Metta, Lagos",
+        "phone": "+234 805 764 9902",
+        "website": "https://ecoride.ng",
+        "membership": "silver",
+        "image": "ecoride.webp"
+    },
+    {
+        "name": "HealthBridge Medicals",
+        "address": "Block 7, Lagos Healthcare Complex, Ikeja",
+        "phone": "+234 817 222 3344",
+        "website": "https://healthbridge.ng",
+        "membership": "bronze",
+        "image": "healthbridge.webp"
+    },
+    {
+        "name": "Nova Hospitality Group",
+        "address": "23 Ahmadu Bello Way, Victoria Island, Lagos",
+        "phone": "+234 802 445 9912",
+        "website": "https://novahospitality.com",
+        "membership": "gold",
+        "image": "novahospitality.webp"
     }
 ]
