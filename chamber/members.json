@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Lagos Chamber of Commerce and Industry",
+        "address": "18 Allen Avenue, Ikeja, Lagos",
+        "phone": "+234 803 123 4567",
+        "website": "https://www.lagoschamber.com/",
+        "membership": "gold",
+        "image": "lcci.webp"
+    },
+    {
+        "name": "Wam West African Mechatronics",
+        "address": "45B Admiralty Way, Lekki Phase 1, Lagos",
+        "phone": "+234 812 345 6789",
+        "website": "https://www.westafricatech.com/",
+        "membership": "silver",
+        "image": "wam.webp"
+    },
+    {
+        "name": "Naija Creative Hub",
+        "address": "Plot 22, Gbagada Industrial Estate, Lagos",
+        "phone": "+234 701 987 6543",
+        "website": "https://naijacreative.com",
+        "membership": "bronze",
+        "image": "naijacreative-logo.jpg"
+    }
+]
