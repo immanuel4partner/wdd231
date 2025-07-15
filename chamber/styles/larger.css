@@ -1,0 +1,23 @@
+/* On larger screens: 3 columns */
+@media (min-width: 768px) {
+    .directory.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* On very large screens: 3 columns */
+@media (min-width: 1200px) {
+    .directory.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        display: block;
+    }
+}
+
+#menu-button {
+    display: none;
+}
