@@ -3,21 +3,20 @@
     .directory.grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+
+    .navigation {
+        display: block;
+    }
+
+     /* Hamburger Menu Hidden by Default on Large Screens */
+    #menu-button {
+        display: block;
+        }
+    }
 
 /* On very large screens: 3 columns */
 @media (min-width: 1200px) {
     .directory.grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media (min-width: 768px) {
-    .navigation {
-        display: block;
-    }
-}
-
-#menu-button {
-    display: none;
 }

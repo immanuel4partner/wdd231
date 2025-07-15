@@ -1,8 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menu-button");
-    const nav = document.querySelector(".navigation");
+// scripts/navigation.js
 
-    menuButton.addEventListener("click", () => {
-        nav.classList.toggle("open");
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector("#menu-button");
+    const navBar = document.querySelector("#nav-bar");
+
+    if (menuBtn && navBar) {
+        menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("show");
+
+            const expanded = menuBtn.getAttribute("aria-expanded") === "true" || false;
+            menuBtn.setAttribute("aria-expanded", !expanded);
+        });
+    }
 });

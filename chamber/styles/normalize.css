@@ -1,3 +1,4 @@
+/* CSS Reset and Normalize */
 html,
 body,
 div,
@@ -58,6 +59,7 @@ legend {
     vertical-align: baseline;
 }
 
+/* Remove default line spacing and list styles */
 body {
     line-height: 1;
 }
@@ -67,6 +69,7 @@ ul {
     list-style: none;
 }
 
+/* Additional margin/padding reset */
 html,
 body,
 h1,

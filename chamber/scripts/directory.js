@@ -1,57 +1,86 @@
-const directoryContainer = document.querySelector("#directory");
-const gridBtn = document.querySelector("#grid-view");
-const listBtn = document.querySelector("#list-view");
+// scripts/directory.js
 
-function setActive(activeBtn, inactiveBtn) {
-    activeBtn.classList.add("active");
-    inactiveBtn.classList.remove("active");
+const directory = document.querySelector("#directory");
+const gridBtn = document.getElementById("grid-view");
+const listBtn = document.getElementById("list-view");
+
+function setActive(active, inactive) {
+    active.classList.add("active");
+    inactive.classList.remove("active");
 }
 
+// Render Members
 function renderMembers(members, view) {
+    directory.innerHTML = "";
 
-    directoryContainer.innerHTML = ""; // clear content
+    if (view === "list") {
+        const header = document.createElement("div");
+        header.className = "list-header";
+        header.innerHTML = `
+            <span>Logo</span>
+            <span>Name</span>
+            <span>Address</span>
+            <span>Phone</span>
+            <span>Website</span>
+        `;
+        directory.appendChild(header);
+    }
 
     members.forEach(member => {
         const card = document.createElement("div");
-        card.classList.add("member-card");
+        card.className = view === "grid" ? "member-card" : "list-row";
 
-        card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" width="150" height="150">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-            <p class="membership">${member.membership.toUpperCase()} Member</p>
-        `;
+        if (view === "grid") {
+            card.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name} logo" />
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+                <p class="membership">${member.membership.toUpperCase()} Member</p>
+            `;
+        } else {
+            card.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name} logo" class="list-logo" />
+                <span>${member.name}</span>
+                <span>${member.address}</span>
+                <span>${member.phone}</span>
+                <a href="${member.website}" target="_blank">${member.website}</a>
+            `;
+        }
 
-        directoryContainer.appendChild(card);
+        directory.appendChild(card);
     });
 
-    directoryContainer.className = `directory ${view}`;
+    directory.className = `directory ${view}`;
 }
 
-async function getMembers(view = "grid") {
+// Load Data
+async function getDirectory(view = "grid") {
     try {
         const response = await fetch("data/members.json");
         const members = await response.json();
         renderMembers(members, view);
-    } catch (err) {
-        console.error("Failed to fetch members.json:", err);
+    } catch (error) {
+        console.error("Error loading members:", error);
     }
 }
 
+// Event Listeners
 gridBtn.addEventListener("click", () => {
     setActive(gridBtn, listBtn);
-    getMembers("grid");
+    getDirectory("grid");
 });
 
 listBtn.addEventListener("click", () => {
     setActive(listBtn, gridBtn);
-    getMembers("list");
+    getDirectory("list");
 });
 
+// Footer info
 document.querySelector("#currentyear").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-getMembers("grid");
+// Default load
 setActive(gridBtn, listBtn);
+getDirectory("grid");
