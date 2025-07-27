@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Discover Events, Join our community, and Explore Local Businesses.">
+    <meta name="author" content="NJIBIE Immanuel">
+    <title>Lagos Chamber of Commerce | Home</title>
+
+    <meta property="og:title" content="Lagos Chamber of Commerce Home">
+    <meta property="og:description"
+        content="Find local businesses, services, and organizations that are part of the Lagos Chamber of Commerce.">
+    <meta property="og:image" content="https://images/directory-banner.webp" />
+    <meta property="og:url" content="https://immanuel4partner.github.io/wdd231/chamber/directory.html" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-title">Lagos Chamber of Commerce</div>
+        <button id="menu-button" aria-label="Menu">&#9776;</button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Join Our Chamber of Commerce</h1>
+
+        <form action="thankyou.html" method="get" class="membership-form">
+            <fieldset>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name"
+                    required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
+
+                <label for="compTitle">Company Title</label>
+                <input type="text" id="compTitle" name="compTitle" title="Company Title"
+                    autocomplete="company-title" pattern="[A-Za-z\s\-]{7,}">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" title="Email" autocomplete="email" required
+                    placeholder="you@example.com">
+
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" title="Phone" autocomplete="tel" required>
+
+                <label for="Company">Comapany Name</label>
+                <input type="text" id="Company" name="Company" title="Company"
+                    autocomplete="Company" required>
+
+                <label for="membershipLevel">Membership Level</label>
+                <select id="membershipLevel" name="membershipLevel" title="Membership Level">
+                    <option value="NP">NP Membership (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business Description</label>
+                <textarea id="description" name="description" title="Business Description"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Apply for Membership</button>
+            </fieldset>
+        </form>
+
+        <section class="membership-cards">
+            <h2 class="membership-heading">Membership Levels</h2>
+            <div class="cards-container">
+
+                <div class="card np delay1">
+                    <h3>Non-Profit</h3>
+                    <p>No fee for qualifying non-profit.</p>
+                    <a href="#np-modal">More Info</a>
+                </div>
+
+                <div class="card bronze delay2">
+                    <h3>Bronze</h3>
+                    <p>Entry-level benefits for small businesses.</p>
+                    <a href="#bronze-modal">More Info</a>
+                </div>
+
+                <div class="card silver delay3">
+                    <h3>Silver</h3>
+                    <p>Additional exposure and event discounts.</p>
+                    <a href="#silver-modal">More Info</a>
+                </div>
+
+                <div class="card gold delay4">
+                    <h3>Gold</h3>
+                    <p>Maximum benefits with spotlight promotions.</p>
+                    <a href="#gold-modal">More Info</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <button class="close">Close</button>
+            <h3>Non-Profit Membership</h3>
+            <p>Access for community Events with no fees. Includes basic directory listing.
+            </p>
+        </div>
+    </div>
+    
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <button class="close">Close</button>
+            <h3>Bronze Membership</h3>
+            <p>Entry-level Membership with Directory listing and access to Training Events.</p>
+        </div>
+    </div>
+    
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <button class="close">Close</button>
+            <h3>Silver Membership</h3>
+            <p>Silver level includes everything in Bronze, plus spotlight promotions and event discounts.</p>
+        </div>
+    </div>
+    
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <button class="close">Close</button>
+            <h3>Gold Membership</h3>
+            <p>Gold members receive all benefits including Premium Advertising Placements and exclusive homepage spotlight.
+                events.</p>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+            
+        </div>
+        <div class="footer-center">
+            <div class="social">
+                <a href="#"><img src="images/github.svg" alt="GitHub"></a>
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>               
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>WDD 231 | NJIBIE Immanuel</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+   
+</body>
+
+</html>
