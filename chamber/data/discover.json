@@ -1,0 +1,74 @@
+{
+    "discover": [
+        {
+            "name": "Tarkwa Bay Beach",
+            "address": "Tarkwa Bay (off Lagos Harbour), Lagos State, Nigeria",
+            "cost": "₦2,000 entry; chairs/tents about ₦500 more",
+            "description": "A sheltered, palm‑fringed beach only accessible by boat; popular for swimming, surfing and picnic days out.",
+            "image": "images/tarkwa.webp"
+        },
+        {
+            "name": "Lekki Conservation Centre",
+            "address": "Opposite Chevron Roundabout, Lekki‑Epe Expressway, Lagos State, Nigeria",
+            "cost": "Entrance ~₦1,000; canopy walk around ₦2,000",
+            "description": "78 ha of protected mangrove swamp with the continent’s longest canopy walkway, bird hides and guided nature trails.",            
+            "image": "images/lekki.webp"           
+        },
+        {
+            "name": "Makoko Floating Village Tour",
+            "address": "Makoko waterfront, Lagos Lagoon, Mainland, Lagos, Nigeria",
+            "cost": "About ₦5,000–₦7,000 per 4‑person canoe tour",
+            "description": "A guided canoe exploration of Lagos’s iconic 'Venice of Africa'—a stilts community with floating schools and fishing life.",            
+            "image": "images/makoko.webp"
+        },
+        {
+            "name": "LUFASI Nature Park",
+            "address": "KM 10 Lagos–Ikorodu Road, Ogudu GRA, Lagos, Nigeria",
+            "cost": "Entrance ₦400; zoo/wildlife viewing ₦500",
+            "description": "A 50‑acre forest‑reserve‑style park, with walking paths, small zoo, picnic areas and children’s playground—a peaceful urban escape.",            
+            "image": "images/lufasi.webp"
+        },
+        {
+            "name": "Elegushi Royal Beach",
+            "address": "KM 17 Lekki–Epe Expressway, Lekki Area, Lagos, Nigeria",
+            "cost": "Chair/hammock ₦500–₦1,500; beach sports/events extra",
+            "description": "A lively private beach with street food stalls, pony and bicycle rides, beachfront bars and weekend parties.",            
+            "image": "images/elegushi.webp"
+        },
+        {
+            "name": "Nike Art Gallery",
+            "address": "Gordon Road, Ikoyi, Lagos State, Nigeria",
+            "cost": "Free entry; workshops/painting sessions ₦2,000–₦5,000",
+            "description": "One of Africa’s largest art galleries showing paintings, textiles and sculptures; visitors can join creative workshops.",            
+            "image": "images/nikeart.webp"
+        },
+        {
+            "name": "New Afrika Shrine",
+            "address": "Ojuelegba area, Surulere, Lagos, Nigeria",
+            "cost": "Event cover ₦2,000–₦5,000 (live tribute or Afrobeat nights)",
+            "description": "Fela Kuti’s iconic open‑air venue (rebuilt), with live Afrobeat bands, dance, food stalls and Nollywood screenings.",            
+            "image": "images/shrine.webp"
+        },
+        {
+            "name": "Freedom Park Lagos",
+            "address": "1 Broad Street, Lagos Island, Lagos State, Nigeria",
+            "cost": "Free to enter; concerts, festivals charged ₦1,000–₦5,000",
+            "description": "A restored colonial prison-turned public space with gardens, art exhibits, open‑air amphitheatre and cultural markets.",            
+            "image": "images/freedom.webp"
+        },
+        {
+            "name": "Balogun Market",
+            "address": "Balogun Market (around 62 Davies St), Lagos Island, Lagos, Nigeria",
+            "cost": "Free entry; cost of goods only",
+            "description": "One of Lagos’s busiest shopping labyrinths for textiles, crafts and street food—haggling and vibrant street‑scene included.",            
+            "image": "images/balogun.webp"
+        },
+        {
+            "name": "Terra Kulture",
+            "address": "Plot 1376 Tiamiyu Savage Street, Off Ahmadu Bello Way, Victoria Island, Lagos, Nigeria",
+            "cost": "Play/gallery: ₦2,000–₦5,000; gallery entry usually free",
+            "description": "A showcase of Nigerian creativity—gallery space, bookstore, restaurant and a theatre hosting plays and music performances.",            
+            "image": "images/terra.webp"
+        }
+    ]
+}
