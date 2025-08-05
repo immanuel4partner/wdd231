@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const daysElapsed = Math.floor((now - lastVisit) / MS_IN_DAY);
 
     if (daysElapsed < 1) {
-      messageDiv.textContent = "We will be Right Back, Stay Tuned!";
+      messageDiv.textContent = "Need Help, Go to Contact Us!";
     } else if (daysElapsed === 1) {
       messageDiv.textContent = "You last visited 1 day ago.";
     } else {
